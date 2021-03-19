@@ -19,6 +19,8 @@ import Aleatorio from './src/Components/aleatorio' */
 import Contador from './src/Components/Contador'
 
 
+
+
 export default function App() {
   return (
     
