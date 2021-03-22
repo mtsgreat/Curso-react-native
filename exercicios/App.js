@@ -1,8 +1,12 @@
 
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, SafeAreaView } from 'react-native';
 
+import ImpoarOuPar from './src/Components/ParIoumpar'
 
+/* import Diferenciar from './src/Components/Diferenciar' */
+
+/* import ContadorV2 from './src/Components/contador/ContadorV2' */
 
 /* import Original,{Comp2, Comp3} from './src/Components/Multi'
 import Primeiro from './src/Components/Primeiro' */
@@ -12,11 +16,10 @@ import Primeiro from './src/Components/Primeiro' */
 import Aleatorio from './src/Components/aleatorio' */
 
 /* import Titulo from './src/Components/Titulo' */
-
  
 /* import Botao from './src/Components/Botao' */
 
-import Contador from './src/Components/Contador'
+/* import Contador from './src/Components/Contador' */
 
 
 
@@ -24,9 +27,14 @@ import Contador from './src/Components/Contador'
 export default function App() {
   return (
     
-   <View style={style.App}>
-     <Contador inicial={100}/>
-      {/* <MinMax min="3" max="20"/>
+   <SafeAreaView  style={style.App}>{
+    
+   <ImpoarOuPar numero={4}/>
+    
+    /*
+     <Diferenciar/>
+     <ContadorV2/>
+      <Contador inicial={100}/> <MinMax min="3" max="20"/>
      <Botao/>
      <Titulo principal="Cadastro" secundario="Tela de cadastro do produto"/>
       <MinMax min="100" max="150"/>
@@ -35,7 +43,7 @@ export default function App() {
       <Comp3/>
       <Primeiro/> 
       <Aleatorio max="20"/>*/}
-    </View>
+    </SafeAreaView>
   );
 }
 
