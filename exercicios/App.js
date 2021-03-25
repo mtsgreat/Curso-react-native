@@ -1,8 +1,11 @@
 
 import React from 'react';
-import { StyleSheet, SafeAreaView } from 'react-native';
+import { StyleSheet, SafeAreaView, View } from 'react-native';
 
-import ImpoarOuPar from './src/Components/ParIoumpar'
+/* import Familia from './src/Components/relacao/Familia'
+import Membro from  './src/Components/relacao/Membro' */
+
+/* import ImpoarOuPar from './src/Components/ParIoumpar' */
 
 /* import Diferenciar from './src/Components/Diferenciar' */
 
@@ -21,17 +24,47 @@ import Aleatorio from './src/Components/aleatorio' */
 
 /* import Contador from './src/Components/Contador' */
 
+/* import Soma from './src/Components/Soma' */
+
+/* import SomaV2 from './src/Components/Somav2' */
 
 
+import UsuarioLogado from  './src/Components/UsuarioLogado'
 
 export default function App() {
   return (
+   <View style={style.App}>
+       
+       <UsuarioLogado usuario={ {nome: "Mateus", email: "mtsgreat@gmail.com"} }/>
+       <UsuarioLogado usuario={ {nome: "Bia"} }/>
+        
+     
+   </View>
+
+
+/* 
+<SomaV2 v1={5} v2={20}/>
+      <Familia>
+        <Membro nome="Duda" sobrenome="Silva"/>
+        <Membro nome="Taci" sobrenome="Nascimento"/>
+   </Familia>
+   <Familia>
+        <Membro nome="Mateus" sobrenome="Silva"/>
+        <Membro nome="Severina" sobrenome="Nascimento"/>
+   </Familia>
+   <Familia>
+        <Membro nome="Henrique" sobrenome="Bernardino"/>
+        <Membro nome="Bruna" sobrenome="Karla"/>
+   </Familia>
+
+     <SafeAreaView  style={style.App}>{
     
-   <SafeAreaView  style={style.App}>{
-    
-   <ImpoarOuPar numero={4}/>
-    
+   <Familia>
+        <Membro nome="Duda" sobrenome="Silva"/>
+        <Membro nome="Taci" sobrenome="Nascimento"/>
+   </Familia>    
     /*
+    <ImpoarOuPar numero={4}/>
      <Diferenciar/>
      <ContadorV2/>
       <Contador inicial={100}/> <MinMax min="3" max="20"/>
@@ -42,8 +75,8 @@ export default function App() {
       <Comp2></Comp2>
       <Comp3/>
       <Primeiro/> 
-      <Aleatorio max="20"/>*/}
-    </SafeAreaView>
+      <Aleatorio max="20"/>*/
+   // </SafeAreaView>
   );
 }
 
